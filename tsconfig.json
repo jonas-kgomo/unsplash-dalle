@@ -16,6 +16,6 @@
     "jsx": "preserve",
     "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/weviate.ts", "lib/weviate.ts", "components/wikisearch.jsx"],
   "exclude": ["node_modules"]
 }
