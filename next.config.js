@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['store.storeimages.cdn-apple.com'],
+    domains: ['store.storeimages.cdn-apple.com', 'images.unsplash.com', 'en.wikipedia.org', 'upload.wikimedia.org'],
   },
   webpack: (config) => {
     // this will override the experiments
