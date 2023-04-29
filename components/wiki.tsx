@@ -16,7 +16,7 @@ const Wiki: NextPage<Props> = ({ query, resultsLang, colors }) => {
   const [view, setView] = useState<'searchResults' | 'table'>('searchResults');
   const [LIMIT, setLIMIT] = useState(0)
   const [imageUrls, setImageUrls] = useState<string[]>([]);
-  const MAX_API_CALLS = 5; // maximum number of allowed API calls
+  const MAX_API_CALLS = 25; // maximum number of allowed API calls
   
 
   useEffect(() => {
