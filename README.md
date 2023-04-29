@@ -9,10 +9,45 @@ deployUrl: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%
 demoUrl: https://edge-functions-feature-flag-apple-store.vercel.app/
 ---
 
-# Apple Store
 
-This template uses [Upstash](https://upstash.com/) (Edge Redis Database) as fast storage to control whether an store is open or closed.
+# t-SNE | graph visualisation 
 
+- center the query and show bubbles of closely related links 
+
+
+# Local API
+
+
+`http://localhost:3000/api/wikimage?title=car`
+
+result 
+
+```json
+{"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/5/5d/401_Gridlock.jpg"}
+```
+
+
+# Wikipedia API 
+
+
+`
+https://en.wikipedia.org/w/api.php?action=query&prop=pageimages&format=json&piprop=original&titles=mfdoom
+`
+
+The result for this endpoint request is:
+
+```json
+{"batchcomplete":"","query":{"normalized":[{"from":"mfdoom","to":"Mfdoom"}],"pages":{"-1":{"ns":0,"title":"Mfdoom","missing":""}}}}
+```
+
+
+curl -X GET \
+     "https://datasets-server.huggingface.co/first-rows?dataset=Cohere%2Fwikipedia-22-12-simple-embeddings&config=Cohere--wikipedia-22-12-simple-embeddings&split=train"
+
+
+
+
+     
 ## Demo
 
 https://edge-functions-feature-flag-apple-store.vercel.app/
